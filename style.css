@@ -1,0 +1,166 @@
+/* Custom CSS for Love and Deepspace Website */
+
+/* General Styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 100%);
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: rgba(26, 26, 46, 0.9) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #3a3a5c;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+  color: #e0e0e0 !important;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #00d4ff !important;
+}
+
+/* Carousel */
+.carousel-item img {
+  height: 60vh;
+  object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+/* About Section */
+#about\ game {
+  background-color: rgba(15, 15, 35, 0.8);
+  padding: 4rem 0;
+}
+
+.section-title {
+  color: #00d4ff;
+  font-weight: bold;
+  text-shadow: 0 0 10px #00d4ff;
+}
+
+.about-text {
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Characters Section */
+#Characters {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+}
+
+#Characters .section-title {
+  color: #ff6b6b;
+  text-shadow: 0 0 10px #ff6b6b;
+}
+
+.underline {
+  width: 50px;
+  height: 3px;
+  background-color: #ff6b6b;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: rgba(26, 26, 46, 0.9);
+  border: 1px solid #3a3a5c;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-bottom: 2rem;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 212, 255, 0.3);
+}
+
+.card-img-top {
+  border-radius: 10px 10px 0 0;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  color: #00d4ff;
+  font-weight: bold;
+}
+
+.card-text {
+  color: #c0c0c0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.btn-primary {
+  background-color: #ff6b6b;
+  border-color: #ff6b6b;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #ff4757;
+  border-color: #ff4757;
+}
+
+/* Footer */
+footer {
+  background-color: rgba(15, 15, 35, 0.9);
+  padding: 2rem 0;
+  color: #c0c0c0;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 40vh;
+  }
+
+  .card {
+    margin-bottom: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .about-text {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .card-img-top {
+    height: 150px;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .card-text {
+    font-size: 0.8rem;
+  }
+}
